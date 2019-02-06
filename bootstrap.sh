@@ -27,4 +27,4 @@ pipenv sync
 chown --recursive reminderbot:wheel "$install_target"
 
 # Set cron job
-crontab "$install_target/crontab.txt"
+crontab -u reminderbot "$install_target/crontab.txt"
