@@ -20,5 +20,5 @@
 # For more information see the manual pages of crontab(5) and cron(8)
 #
 # m h  dom mon dow   command
-# 1700 for UTC
-0 17 * * FRI cd /opt/reminderbot && pipenv run /opt/reminderbot/main.py
+# 1900 for UTC; 11am PST
+0 19 * * SAT /opt/venvs/reminderbot/bin/python /opt/reminderbot/main.py 2>&1 | logger
